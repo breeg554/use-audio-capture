@@ -17,9 +17,5 @@ export default defineConfig({
     },
   },
 
-  plugins: [
-    react(),
-    tsconfigPaths(),
-    dts({ exclude: ['src/main.tsx', 'src/App.tsx'] }),
-  ],
+  plugins: [react(), tsconfigPaths(), dts({ exclude: ['src/main.tsx'] })],
 });
