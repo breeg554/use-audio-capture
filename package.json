@@ -5,10 +5,15 @@
   "type": "module",
   "license": "MIT",
   "author": "breeg554",
+  "description": "FILL LATER",
   "repository": {
     "type": "git",
     "url": "https://github.com/breeg554/react-audio-recorder.git"
   },
+  "bugs": {
+    "url":"https://github.com/breeg554/react-audio-recorder/issues"
+  },
+  "keywords": [ "FILL LATER"],
   "source": "src/index.ts",
   "exports": {
     ".": {

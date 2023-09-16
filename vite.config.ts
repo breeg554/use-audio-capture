@@ -9,7 +9,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       formats: ['cjs', 'es'],
-      name: 'index',
+      name: 'react-audio-formatter',
       fileName: 'index',
     },
     rollupOptions: {
@@ -17,5 +17,9 @@ export default defineConfig({
     },
   },
 
-  plugins: [react(), tsconfigPaths(), dts()],
+  plugins: [
+    react(),
+    tsconfigPaths(),
+    dts({ exclude: ['src/main.tsx', 'src/App.tsx'] }),
+  ],
 });
