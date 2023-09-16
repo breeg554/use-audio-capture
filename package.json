@@ -1,7 +1,7 @@
 {
   "name": "react-audio-recorder",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "license": "MIT",
   "author": "breeg554",
@@ -11,9 +11,11 @@
     "url": "https://github.com/breeg554/react-audio-recorder.git"
   },
   "bugs": {
-    "url":"https://github.com/breeg554/react-audio-recorder/issues"
+    "url": "https://github.com/breeg554/react-audio-recorder/issues"
   },
-  "keywords": [ "FILL LATER"],
+  "keywords": [
+    "FILL LATER"
+  ],
   "source": "src/index.ts",
   "exports": {
     ".": {
