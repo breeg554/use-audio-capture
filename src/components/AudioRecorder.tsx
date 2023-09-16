@@ -15,6 +15,7 @@ import { MicrophoneIcon } from '~icons/MicrophoneIcon.tsx';
 import { PlayIcon } from '~icons/PlayIcon.tsx';
 import { PauseIcon } from '~icons/PauseIcon.tsx';
 import { TrashIcon } from '~icons/TrashIcon.tsx';
+import './audioRecorder.css';
 
 export type MediaRecorderState =
   | 'inactive'
@@ -142,7 +143,7 @@ export const AudioRecorder: React.FC<AudioRecorderProps> = ({
   }, [status]);
 
   return (
-    <div>
+    <div className="audio-recorder">
       <audio
         key={audioValue}
         src={audioValue}
@@ -156,9 +157,12 @@ export const AudioRecorder: React.FC<AudioRecorderProps> = ({
         <ButtonIcon />
       </button>
 
-      <div>
-        <canvas ref={canvasRef} width={audioUrl ? 178 : 210} height={36} />
-      </div>
+      <canvas
+        className="audio-recorder-canvas"
+        ref={canvasRef}
+        width={audioUrl ? 178 : 210}
+        height={36}
+      />
 
       {audioValue && (
         <button onClick={handleClear}>
