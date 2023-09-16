@@ -22,7 +22,8 @@
     "paths": {
       "~utils/*": ["src/utils/*"],
       "~hooks/*": ["src/hooks/*"],
-      "~components/*": ["src/components/*"]
+      "~components/*": ["src/components/*"],
+      "~icons/*": ["src/icons/*"]
     }
   },
   "include": ["src"],

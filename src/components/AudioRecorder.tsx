@@ -11,6 +11,10 @@ import {
   UseAudioRecorderCb,
   UseAudioRecorderProps,
 } from '~hooks/useAudioRecorder';
+import { MicrophoneIcon } from '~icons/MicrophoneIcon.tsx';
+import { PlayIcon } from '~icons/PlayIcon.tsx';
+import { PauseIcon } from '~icons/PauseIcon.tsx';
+import { TrashIcon } from '~icons/TrashIcon.tsx';
 
 export type MediaRecorderState =
   | 'inactive'
@@ -98,10 +102,10 @@ export const AudioRecorder: React.FC<AudioRecorderProps> = ({
   });
 
   const ButtonIcon = useCallback(() => {
-    if (audioValue && status === 'playing') return <span>pause</span>;
-    if (audioValue && status === 'paused') return <span>play</span>;
+    if (audioValue && status === 'playing') return <PauseIcon />;
+    if (audioValue && status === 'paused') return <PlayIcon />;
 
-    return <span>mic</span>;
+    return <MicrophoneIcon />;
   }, [audioValue, status]);
 
   const playAudio = useCallback(async () => {
@@ -156,7 +160,11 @@ export const AudioRecorder: React.FC<AudioRecorderProps> = ({
         <canvas ref={canvasRef} width={audioUrl ? 178 : 210} height={36} />
       </div>
 
-      {audioValue && <button onClick={handleClear}>trash</button>}
+      {audioValue && (
+        <button onClick={handleClear}>
+          <TrashIcon />
+        </button>
+      )}
     </div>
   );
 };
