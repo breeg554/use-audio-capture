@@ -4,7 +4,7 @@ It provides functionality for starting, stopping, pausing, and resuming recordin
 
 ## Features
 
-- 🧠 **Intuitive API:** Seamlessly integrates with React components for a smooth developer experience.
+- 🧠 **Intuitive API**
 - 🎣 **Customizable Callbacks:** Easily react to various recording events such as starting, stopping, pausing, and data chunk availability.
 - 🚫 **Error Handling:** Built-in error events to handle and manage recording issues.
 - ⏸️ **Pause and Resume:** Not just start and stop! Pause your recordings and resume right where you left off.
