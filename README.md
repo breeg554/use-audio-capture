@@ -52,14 +52,14 @@ export const AudioRecorder: React.FC<AudioRecorderProps> = () => {
 ## Available Callbacks and Their Properties
 
 
-| Callback       | Description                                     | Properties Received                                      |
-|----------------|-------------------------------------------------|---------------------------------------------------------|
-| `onStart`      | Called when recording starts.                   | `event`, `{ mediaStream, mediaRecorder }`     |
-| `onChunk`      | Called when a data chunk is available.          | `blobEvent`, `{ mediaStream, mediaRecorder }`           |
-| `onStop`       | Called when recording stops.                    | `event`, `chunks`, `{ mediaStream, mediaRecorder }`     |
-| `onPause`      | Called when recording is paused.                | `event`, `chunks`, `{ mediaStream, mediaRecorder }`     |
-| `onResume`     | Called when recording is resumed after pausing. | `event`, `chunks`, `{ mediaStream, mediaRecorder }`     |
-| `onError`      | Called when an error occurs during recording.  | `event`, `{ mediaStream, mediaRecorder, error }`        |
+| Callback       | Description                                     | Properties Received                          |
+|----------------|-------------------------------------------------|---------------------------------------------|
+| `onStart`      | Called when recording starts.                   | `event`, `{ mediaStream }`     |
+| `onChunk`      | Called when a data chunk is available.          | `blobEvent`, `{ mediaStream }`     |
+| `onStop`       | Called when recording stops.                    | `event`, `chunks`, `{ mediaStream }` |
+| `onPause`      | Called when recording is paused.                | `event`, `chunks`, `{ mediaStream }` |
+| `onResume`     | Called when recording is resumed after pausing. | `event`, `chunks`, `{ mediaStream }` |
+| `onError`      | Called when an error occurs during recording.  | `event`, `{ mediaStream, error }` |
 
 
 ## License

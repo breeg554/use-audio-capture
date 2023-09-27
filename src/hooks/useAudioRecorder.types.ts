@@ -1,6 +1,5 @@
 export interface UseAudioRecorderCbOptions {
   mediaStream: MediaStream | null;
-  mediaRecorder: MediaRecorder | null;
 }
 
 export interface UseAudioRecorderErrorCbOptions

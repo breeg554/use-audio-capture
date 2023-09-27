@@ -24,28 +24,24 @@ export const useAudioRecorder = (props?: UseAudioRecorderProps) => {
     recorder.onstart = async (e) => {
       props?.onStart?.(e, {
         mediaStream: stream,
-        mediaRecorder: recorder,
       });
     };
 
     recorder.onstop = (e) => {
       props?.onStop?.(e, chunks.current, {
         mediaStream: stream,
-        mediaRecorder: recorder,
       });
     };
 
     recorder.onpause = (e) => {
       props?.onPause?.(e, chunks.current, {
         mediaStream: stream,
-        mediaRecorder: recorder,
       });
     };
 
     recorder.onerror = (e) => {
       props?.onError?.(e, {
         mediaStream: stream,
-        mediaRecorder: recorder,
         error: new Error('An error occurred while recording'),
       });
     };
@@ -53,7 +49,6 @@ export const useAudioRecorder = (props?: UseAudioRecorderProps) => {
     recorder.onresume = (e) => {
       props?.onResume?.(e, chunks.current, {
         mediaStream: stream,
-        mediaRecorder: recorder,
       });
     };
 
@@ -61,7 +56,6 @@ export const useAudioRecorder = (props?: UseAudioRecorderProps) => {
       chunks.current.push(e.data);
       props?.onChunk?.(e, {
         mediaStream: stream,
-        mediaRecorder: recorder,
       });
     };
 
@@ -84,7 +78,6 @@ export const useAudioRecorder = (props?: UseAudioRecorderProps) => {
       props?.onError?.(new Event(errMsg), {
         error: err,
         mediaStream: mediaStream.current,
-        mediaRecorder: mediaRecorder.current,
       });
     }
   }, [props, requestPermissions]);
@@ -104,7 +97,6 @@ export const useAudioRecorder = (props?: UseAudioRecorderProps) => {
       props?.onError?.(new Event(errMsg), {
         error: err,
         mediaStream: mediaStream.current,
-        mediaRecorder: mediaRecorder.current,
       });
     }
   }, [props]);
@@ -122,7 +114,6 @@ export const useAudioRecorder = (props?: UseAudioRecorderProps) => {
       props?.onError?.(new Event(errMsg), {
         error: err,
         mediaStream: mediaStream.current,
-        mediaRecorder: mediaRecorder.current,
       });
     }
   }, [props]);
@@ -140,7 +131,6 @@ export const useAudioRecorder = (props?: UseAudioRecorderProps) => {
       props?.onError?.(new Event(errMsg), {
         error: err,
         mediaStream: mediaStream.current,
-        mediaRecorder: mediaRecorder.current,
       });
     }
   }, [props]);
