@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/lodash.isequal': ^4.5.6
   '@types/react': ^18.2.15
   '@types/react-dom': ^18.2.7
   '@typescript-eslint/eslint-plugin': ^6.0.0
@@ -12,7 +11,6 @@ specifiers:
   eslint-plugin-prettier: ^5.0.0
   eslint-plugin-react-hooks: ^4.6.0
   eslint-plugin-react-refresh: ^0.4.3
-  lodash.isequal: ^4.5.0
   prettier: ^3.0.3
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -21,11 +19,7 @@ specifiers:
   vite-plugin-dts: ^3.5.3
   vite-tsconfig-paths: ^4.2.1
 
-dependencies:
-  lodash.isequal: 4.5.0
-
 devDependencies:
-  '@types/lodash.isequal': 4.5.6
   '@types/react': 18.2.21
   '@types/react-dom': 18.2.7
   '@typescript-eslint/eslint-plugin': 6.7.0_upusunw4marwma72j5kmgdi4ee
@@ -693,16 +687,6 @@ packages:
 
   /@types/json-schema/7.0.13:
     resolution: {integrity: sha512-RbSSoHliUbnXj3ny0CNFOoxrIDV6SUGyStHsvDqosw6CkdPV8TtWGlfecuK4ToyMEAql6pzNxgCFKanovUzlgQ==}
-    dev: true
-
-  /@types/lodash.isequal/4.5.6:
-    resolution: {integrity: sha512-Ww4UGSe3DmtvLLJm2F16hDwEQSv7U0Rr8SujLUA2wHI2D2dm8kPu6Et+/y303LfjTIwSBKXB/YTUcAKpem/XEg==}
-    dependencies:
-      '@types/lodash': 4.14.198
-    dev: true
-
-  /@types/lodash/4.14.198:
-    resolution: {integrity: sha512-trNJ/vtMZYMLhfN45uLq4ShQSw0/S7xCTLLVM+WM1rmFpba/VS42jVUgaO3w/NOLiWR/09lnYk0yMaA/atdIsg==}
     dev: true
 
   /@types/prop-types/15.7.5:
@@ -1794,6 +1778,7 @@ packages:
 
   /lodash.isequal/4.5.0:
     resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    dev: true
 
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}

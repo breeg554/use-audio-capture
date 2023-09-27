@@ -5,7 +5,7 @@
   "type": "module",
   "license": "MIT",
   "author": "breeg554",
-  "description": "FILL LATER",
+  "description": "A React hook for audio recording using the Web APIs. Provides functionality for starting, stopping, pausing, and resuming recordings, with customizable callback events.",
   "repository": {
     "type": "git",
     "url": "https://github.com/breeg554/useAudioRecorder.git"
@@ -13,7 +13,15 @@
   "bugs": {
     "url": "https://github.com/breeg554/useAudioRecorder/issues"
   },
-  "keywords": ["react", "audio","hooks","voice","recording","mediaDevices","getUserMedia","mp3","webm","nextjs","remix","recorder","navigator"],
+  "keywords": [
+    "react",
+    "hook",
+    "audio",
+    "web-api",
+    "recorder",
+    "navigator"
+  ],
+  "homepage": "https://github.com/breeg554/useAudioRecorder#readme",
   "source": "src/index.ts",
   "exports": {
     ".": {
@@ -34,7 +42,6 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/lodash.isequal": "^4.5.6",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
@@ -55,8 +62,5 @@
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "lodash.isequal": "^4.5.0"
-  }
+  ]
 }
