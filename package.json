@@ -1,5 +1,5 @@
 {
-  "name": "react-audio-recorder",
+  "name": "use-audio-recorder",
   "private": false,
   "version": "0.0.1",
   "type": "module",
@@ -8,14 +8,12 @@
   "description": "FILL LATER",
   "repository": {
     "type": "git",
-    "url": "https://github.com/breeg554/react-audio-recorder.git"
+    "url": "https://github.com/breeg554/useAudioRecorder.git"
   },
   "bugs": {
-    "url": "https://github.com/breeg554/react-audio-recorder/issues"
+    "url": "https://github.com/breeg554/useAudioRecorder/issues"
   },
-  "keywords": [
-    "FILL LATER"
-  ],
+  "keywords": ["react", "audio","hooks","voice","recording","mediaDevices","getUserMedia","mp3","webm","nextjs","remix","recorder","navigator"],
   "source": "src/index.ts",
   "exports": {
     ".": {
