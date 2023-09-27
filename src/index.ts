@@ -6,7 +6,7 @@ import type {
   UseAudioRecorderCb,
   UseAudioRecorderErrorCbOptions,
   UseAudioRecorderCbOptions,
-} from '~hooks/useAudioRecorder.tsx';
+} from '~hooks/useAudioRecorder.types.ts';
 
 export { useAudioRecorder };
 
