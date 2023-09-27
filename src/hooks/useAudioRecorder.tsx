@@ -110,8 +110,6 @@ export const useAudioRecorder = (props?: UseAudioRecorderProps) => {
       assert(mediaRecorder.current, 'MediaRecorder not created');
       mediaRecorder.current.start(500);
     } catch (err) {
-      console.error(err);
-
       const errMsg = isError(err)
         ? err.message
         : 'Something went wrong during recording';
@@ -132,8 +130,6 @@ export const useAudioRecorder = (props?: UseAudioRecorderProps) => {
 
       mediaStream.current?.getAudioTracks().forEach((track) => track.stop());
     } catch (err) {
-      console.error(err);
-
       const errMsg = isError(err)
         ? err.message
         : 'Something went wrong during stopping recording';
@@ -146,9 +142,46 @@ export const useAudioRecorder = (props?: UseAudioRecorderProps) => {
     }
   }, [props]);
 
+  const pauseRecording = useCallback(async () => {
+    try {
+      assert(mediaRecorder.current, 'MediaRecorder not created');
+
+      mediaRecorder.current.pause();
+    } catch (err) {
+      const errMsg = isError(err)
+        ? err.message
+        : 'Something went wrong during pausing recording';
+
+      props?.onError?.(new Event(errMsg), {
+        error: err,
+        mediaStream: mediaStream.current,
+        mediaRecorder: mediaRecorder.current,
+      });
+    }
+  }, [props]);
+
+  const resumeRecording = useCallback(async () => {
+    try {
+      assert(mediaRecorder.current, 'MediaRecorder not created');
+
+      mediaRecorder.current.resume();
+    } catch (err) {
+      const errMsg = isError(err)
+        ? err.message
+        : 'Something went wrong during resuming recording';
+
+      props?.onError?.(new Event(errMsg), {
+        error: err,
+        mediaStream: mediaStream.current,
+        mediaRecorder: mediaRecorder.current,
+      });
+    }
+  }, [props]);
+
   return {
     start: startRecording,
     stop: stopRecording,
-    stream: mediaStream.current,
+    pause: pauseRecording,
+    resume: resumeRecording,
   };
 };
