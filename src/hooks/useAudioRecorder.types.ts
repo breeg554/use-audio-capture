@@ -14,6 +14,11 @@ export type UseAudioRecorderCb = (
   args: UseAudioRecorderCbOptions,
 ) => void;
 
+export type UseAudioRecorderStartCb = (
+  e: Event,
+  args: UseAudioRecorderErrorCbOptions,
+) => void;
+
 export type UseAudioRecorderErrorCb = (
   e: Event,
   args: UseAudioRecorderErrorCbOptions,
@@ -26,8 +31,8 @@ export type UseAudioRecorderChunkCb = (
 export interface UseAudioRecorderProps {
   onChunk?: UseAudioRecorderChunkCb;
   onError?: UseAudioRecorderErrorCb;
+  onStart?: UseAudioRecorderStartCb;
   onStop?: UseAudioRecorderCb;
-  onStart?: UseAudioRecorderCb;
   onPause?: UseAudioRecorderCb;
   onResume?: UseAudioRecorderCb;
 }

@@ -22,7 +22,7 @@ export const useAudioRecorder = (props?: UseAudioRecorderProps) => {
     const recorder = new MediaRecorder(stream);
 
     recorder.onstart = async (e) => {
-      props?.onStart?.(e, chunks.current, {
+      props?.onStart?.(e, {
         mediaStream: stream,
         mediaRecorder: recorder,
       });
