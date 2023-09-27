@@ -49,6 +49,16 @@ export const AudioRecorder: React.FC<AudioRecorderProps> = () => {
 };
 ```
 
+## Functions returned by `useAudioRecorder`
+
+| Function Name | Description                                       | Parameters                     | Returns       |
+|---------------|---------------------------------------------------|--------------------------------|---------------|
+| `start`       | Starts the audio recording.                       | None                           | `void`        |
+| `stop`        | Stops the audio recording.                        | None                           | `void`        |
+| `pause`       | Pauses the current recording session.             | None                           | `void`        |
+| `resume`      | Resumes a paused recording session.               | None                           | `void`        |
+
+
 ## Available Callbacks and Their Properties
 
 
