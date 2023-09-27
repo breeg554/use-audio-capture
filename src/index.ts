@@ -8,13 +8,7 @@ import type {
   UseAudioRecorderCbOptions,
 } from '~hooks/useAudioRecorder.tsx';
 
-import { useAudioVisualize } from '~hooks/useAudioVisualize.tsx';
-import type { UseAudioVisualizeArgs } from '~hooks/useAudioVisualize.tsx';
-
-import { AudioRecorder } from '~components/AudioRecorder.tsx';
-import type { AudioRecorderProps } from '~components/AudioRecorder.tsx';
-
-export { useAudioRecorder, useAudioVisualize, AudioRecorder };
+export { useAudioRecorder };
 
 export type {
   UseAudioRecorderProps,
@@ -23,6 +17,4 @@ export type {
   UseAudioRecorderCb,
   UseAudioRecorderErrorCbOptions,
   UseAudioRecorderCbOptions,
-  UseAudioVisualizeArgs,
-  AudioRecorderProps,
 };
