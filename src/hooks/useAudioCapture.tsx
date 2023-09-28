@@ -64,6 +64,8 @@ export const useAudioCapture = (props?: UseAudioCaptureProps) => {
 
   const startRecording = useCallback(async () => {
     try {
+      if (mediaRecorder.current?.state === 'recording') return;
+
       chunks.current = [];
 
       await requestPermissions();

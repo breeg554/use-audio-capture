@@ -19,7 +19,7 @@ npm install use-audio-capture
 
 ## Getting Started
 
-#### Basic usage
+#### Basic usage - [See live example](https://stackblitz.com/edit/stackblitz-starters-m44ars?file=src%2FApp.tsx)
 
 ```tsx
 import { useAudioCapture } from 'use-audio-capture';
@@ -48,6 +48,9 @@ export const AudioRecorder: React.FC<AudioRecorderProps> = () => {
   );
 };
 ```
+
+
+#### Stream example - [See live example](https://stackblitz.com/edit/stackblitz-starters-y81wcu?file=src%2FApp.tsx)
 
 ## Functions returned by `useAudioCapture`
 
