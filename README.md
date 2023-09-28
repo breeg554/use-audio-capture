@@ -1,4 +1,4 @@
-# use-audio-recorder
+# use-audio-capture
 A React hook for audio recording using the Web APIs. 
 It provides functionality for starting, stopping, pausing, and resuming recordings, with customizable callback events.
 
@@ -14,7 +14,7 @@ It provides functionality for starting, stopping, pausing, and resuming recordin
 ## Installation
 
 ```bash
-npm install use-audio-recorder
+npm install use-audio-capture
 ```
 
 ## Getting Started
@@ -22,10 +22,10 @@ npm install use-audio-recorder
 #### Basic usage
 
 ```tsx
-import { useAudioRecorder } from 'use-audio-recorder';
+import { useAudioCapture } from 'use-audio-capture';
 
 export const AudioRecorder: React.FC<AudioRecorderProps> = () => {
-  const { start, stop, pause, resume } = useAudioRecorder({
+  const { start, stop, pause, resume } = useAudioCapture({
     onStart: () => {
       console.log('Recording started.');
     },
@@ -49,7 +49,7 @@ export const AudioRecorder: React.FC<AudioRecorderProps> = () => {
 };
 ```
 
-## Functions returned by `useAudioRecorder`
+## Functions returned by `useAudioCapture`
 
 | Function Name | Description                                       | Parameters                     | Returns       |
 |---------------|---------------------------------------------------|--------------------------------|---------------|

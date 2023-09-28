@@ -1,9 +1,9 @@
 import { useCallback, useRef } from 'react';
 import { assert } from '~utils/assert.ts';
 import { isError } from '~utils/isError.ts';
-import { UseAudioRecorderProps } from './useAudioRecorder.types.ts';
+import { UseAudioCaptureProps } from './useAudioCapture.types.ts';
 
-export const useAudioRecorder = (props?: UseAudioRecorderProps) => {
+export const useAudioCapture = (props?: UseAudioCaptureProps) => {
   const chunks = useRef<Blob[]>([]);
   const mediaStream = useRef<MediaStream | null>(null);
   const mediaRecorder = useRef<MediaRecorder | null>(null);

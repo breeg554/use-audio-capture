@@ -9,7 +9,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       formats: ['cjs', 'es'],
-      name: 'use-audio-recorder',
+      name: 'use-audio-capture',
       fileName: 'index',
     },
     rollupOptions: {

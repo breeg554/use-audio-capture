@@ -1,5 +1,5 @@
 {
-  "name": "use-audio-recorder",
+  "name": "use-audio-capture",
   "private": false,
   "version": "0.0.1",
   "type": "module",
@@ -8,10 +8,10 @@
   "description": "A React hook for audio recording using the Web APIs. Provides functionality for starting, stopping, pausing, and resuming recordings, with customizable callback events.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/breeg554/use-audio-recorder.git"
+    "url": "https://github.com/breeg554/use-audio-capture.git"
   },
   "bugs": {
-    "url": "https://github.com/breeg554/use-audio-recorder.git/issues"
+    "url": "https://github.com/breeg554/use-audio-capture.git/issues"
   },
   "keywords": [
     "react",
@@ -21,7 +21,7 @@
     "recorder",
     "navigator"
   ],
-  "homepage": "https://github.com/breeg554/use-audio-recorder.git#readme",
+  "homepage": "https://github.com/breeg554/use-audio-capture.git#readme",
   "source": "src/index.ts",
   "exports": {
     ".": {

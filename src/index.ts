@@ -1,22 +1,22 @@
-import { useAudioRecorder } from '~hooks/useAudioRecorder.tsx';
+import { useAudioCapture } from '~hooks/useAudioCapture.tsx';
 import type {
-  UseAudioRecorderProps,
-  UseAudioRecorderChunkCb,
-  UseAudioRecorderErrorCb,
-  UseAudioRecorderStartCb,
-  UseAudioRecorderCb,
-  UseAudioRecorderErrorCbOptions,
-  UseAudioRecorderCbOptions,
-} from '~hooks/useAudioRecorder.types.ts';
+  UseAudioCaptureProps,
+  UseAudioCaptureChunkCb,
+  UseAudioCaptureErrorCb,
+  UseAudioCaptureStartCb,
+  UseAudioCaptureCb,
+  UseAudioCaptureErrorCbOptions,
+  UseAudioCaptureCbOptions,
+} from '~hooks/useAudioCapture.types.ts';
 
-export { useAudioRecorder };
+export { useAudioCapture };
 
 export type {
-  UseAudioRecorderProps,
-  UseAudioRecorderChunkCb,
-  UseAudioRecorderErrorCb,
-  UseAudioRecorderStartCb,
-  UseAudioRecorderCb,
-  UseAudioRecorderErrorCbOptions,
-  UseAudioRecorderCbOptions,
+  UseAudioCaptureProps,
+  UseAudioCaptureChunkCb,
+  UseAudioCaptureErrorCb,
+  UseAudioCaptureStartCb,
+  UseAudioCaptureCb,
+  UseAudioCaptureErrorCbOptions,
+  UseAudioCaptureCbOptions,
 };
