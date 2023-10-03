@@ -1,0 +1,1 @@
+{"v":3,"stories":{"example-audiorecorder--basic":{"id":"example-audiorecorder--basic","name":"Basic","title":"Example/AudioRecorder","importPath":"./src/stories/AudioRecorder.stories.ts","tags":["story"],"kind":"Example/AudioRecorder","story":"Basic","parameters":{"__id":"example-audiorecorder--basic","docsOnly":false,"fileName":"./src/stories/AudioRecorder.stories.ts"}}}}
