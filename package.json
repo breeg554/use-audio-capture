@@ -1,7 +1,7 @@
 {
   "name": "use-audio-capture",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "license": "MIT",
   "author": "breeg554",
