@@ -1,6 +1,9 @@
 name: Publish Package to npm
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - master
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
