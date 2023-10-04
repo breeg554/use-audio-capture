@@ -39,7 +39,8 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "npm-preview": "npm pack --dry-run"
+    "npm-preview": "npm pack --dry-run",
+    "npm-publish": "npm publish --access public"
   },
   "peerDependencies": {
     "react": "^18.2.0",
