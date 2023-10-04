@@ -52,6 +52,8 @@ export const AudioRecorder: React.FC<AudioRecorderProps> = () => {
 
 #### Stream example - [See live example](https://stackblitz.com/edit/stackblitz-starters-y81wcu?file=src%2FApp.tsx)
 
+[Link to storybook](https://breeg554.github.io/use-audio-capture/?path=/story/example-audiorecorder--basic)
+
 ## Functions returned by `useAudioCapture`
 
 | Function Name | Description                                       | Parameters                     | Returns       |
