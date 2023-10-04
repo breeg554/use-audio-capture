@@ -1,6 +1,6 @@
 name: Publish Package to npm
 on:
-  workflow_call:
+  workflow_dispatch:
 
 jobs:
   build:
