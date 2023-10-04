@@ -1,7 +1,7 @@
 {
   "name": "use-audio-capture",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.5",
   "type": "module",
   "license": "MIT",
   "author": "breeg554",
@@ -40,13 +40,14 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "npm-preview": "npm pack --dry-run",
-    "npm-publish": "npm publish --access public"
+    "changeset-publish": "npm run build && changeset version && changeset publish"
   },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "@storybook/addon-actions": "^7.4.5",
     "@storybook/addon-console": "^2.0.0",
     "@storybook/addon-essentials": "^7.4.5",
