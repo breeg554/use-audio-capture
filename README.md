@@ -49,10 +49,8 @@ export const AudioRecorder: React.FC<AudioRecorderProps> = () => {
 };
 ```
 
-
-#### Stream example - [See live example](https://stackblitz.com/edit/stackblitz-starters-y81wcu?file=src%2FApp.tsx)
-
 [Link to storybook](https://breeg554.github.io/use-audio-capture/?path=/story/example-audiorecorder--basic)
+
 
 ## Functions returned by `useAudioCapture`
 
@@ -75,6 +73,10 @@ export const AudioRecorder: React.FC<AudioRecorderProps> = () => {
 | `onPause`      | Called when recording is paused.                | `event`, `chunks`, `{ mediaStream }` |
 | `onResume`     | Called when recording is resumed after pausing. | `event`, `chunks`, `{ mediaStream }` |
 | `onError`      | Called when an error occurs during recording.  | `event`, `{ mediaStream, error }` |
+
+
+## AudioRecorder component
+Component example built based on **use-audio-capture** hook - [See live example](https://stackblitz.com/edit/da22123fggadad?file=src%2Fcomponents%2FAudioPrecorder%2FRecorder.tsx)
 
 
 ## License
