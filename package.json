@@ -5,23 +5,51 @@
   "type": "module",
   "license": "MIT",
   "author": "breeg554",
-  "description": "A React hook for audio recording using the Web APIs. Provides functionality for starting, stopping, pausing, and resuming recordings, with customizable callback events.",
+  "description": "🎙️ A lightweight React hook for audio recording using native Web APIs (MediaRecorder, getUserMedia). Start, stop, pause, resume audio recordings with customizable callbacks. Perfect for voice notes, interviews, podcasts, and real-time audio processing in React applications.",
   "repository": {
     "type": "git",
     "url": "https://github.com/breeg554/use-audio-capture.git"
   },
   "bugs": {
-    "url": "https://github.com/breeg554/use-audio-capture.git/issues"
+    "url": "https://github.com/breeg554/use-audio-capture/issues"
   },
   "keywords": [
     "react",
     "hook",
     "audio",
+    "recording",
     "web-api",
+    "mediarecorder",
+    "getusermedia",
+    "navigator",
+    "voice",
+    "microphone",
+    "sound",
+    "capture",
     "recorder",
-    "navigator"
+    "real-time",
+    "streaming",
+    "blob",
+    "webm",
+    "audio-processing",
+    "voice-notes",
+    "podcast",
+    "interview",
+    "typescript",
+    "react-hook",
+    "browser-api",
+    "audio-capture",
+    "media-stream",
+    "audio-recording",
+    "web-audio",
+    "audio-hooks",
+    "react-audio"
   ],
-  "homepage": "https://github.com/breeg554/use-audio-capture.git#readme",
+  "homepage": "https://breeg554.github.io/use-audio-capture",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/breeg554"
+  },
   "source": "src/index.ts",
   "exports": {
     ".": {
