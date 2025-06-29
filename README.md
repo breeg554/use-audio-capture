@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
 
-A **lightweight**, **zero-dependency** React hook for **audio recording** using native **Web APIs** (MediaRecorder, getUserMedia). Perfect for building **voice notes**, **podcasts**, **interviews**, and **real-time audio processing** applications in React.
+A **lightweight**, **zero-dependency** React hook for audio recording using native Web APIs (MediaRecorder, getUserMedia). Perfect for building voice notes, podcasts, interviews, and real-time audio processing applications in React.
 
 ## 🚀 Why use-audio-capture?
 
@@ -36,16 +36,16 @@ pnpm add use-audio-capture
 
 Perfect for building:
 
-- 🎙️ **Voice note applications**
-- 🎧 **Podcast recording tools**
-- 📞 **Interview and meeting recorders**
-- 🎵 **Music practice apps**
-- 🗣️ **Voice memos and dictation tools**
-- 📱 **Audio chat applications**
-- 🎬 **Content creation platforms**
-- 🔊 **Audio feedback systems**
-- 🎤 **Karaoke and singing apps**
-- 📚 **Language learning tools with pronunciation**
+- 🎙️ Voice note applications
+- 🎧 Podcast recording tools
+- 📞 Interview and meeting recorders
+- 🎵 Music practice apps
+- 🗣️ Voice memos and dictation tools
+- 📱 Audio chat applications
+- 🎬 Content creation platforms
+- 🔊 Audio feedback systems
+- 🎤 Karaoke and singing apps
+- 📚 Language learning tools with pronunciation
 
 ## 🏁 Quick Start
 
